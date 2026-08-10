@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="luunaliens — Korean food made for your cravings.">
+  <title>luunaliens — Korean Food, Made for Your Cravings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <span data-i18n="topbar">FREE DELIVERY untuk area tertentu • Order via WhatsApp</span>
+  </div>
+
+  <header class="header" id="home">
+    <a class="brand" href="#home" aria-label="luunaliens home">
+      <span class="brand-mark">L</span>
+      <span>luunaliens</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#menu" data-i18n="navMenu">Menu</a>
+      <a href="#promo" data-i18n="navPromo">Promo</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#howto" data-i18n="navHow">Cara Order</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" aria-label="Search" title="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+      </button>
+      <select id="languageSelect" class="language" aria-label="Language">
+        <option value="id">ID</option>
+        <option value="en">EN</option>
+      </select>
+      <button class="cart-btn" id="cartButton" aria-label="Shopping cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="search-inner">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+      <input id="searchInput" type="search" placeholder="Cari ramyeon, kimbap, tteokbokki..." data-i18n-placeholder="searchPlaceholder">
+      <button id="closeSearch" aria-label="Close search">×</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="heroEyebrow">KOREAN FOOD • MADE WITH LOVE</span>
+        <h1 data-i18n="heroTitle">Your Korean<br><em>food fix</em> starts here.</h1>
+        <p data-i18n="heroText">Nikmati comfort food Korea favoritmu — pedas, gurih, cheesy, dan selalu bikin pengen lagi.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary" data-i18n="heroCta">Lihat Menu</a>
+          <a href="#about" class="btn btn-ghost" data-i18n="heroSecondary">Kenal luunaliens →</a>
+        </div>
+        <div class="mini-proof">
+          <div class="avatars"><span>🍜</span><span>🥢</span><span>❤️</span></div>
+          <div><strong data-i18n="proofTitle">Made for cravings.</strong><small data-i18n="proofText">Korean taste, luunaliens way.</small></div>
+        </div>
+      </div>
+
+      <div class="hero-slider" aria-label="Featured Korean food slider">
+        <div class="slides" id="slides">
+          <article class="slide active">
+            <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=1200&q=85" alt="Ramen noodles">
+            <div class="slide-label"><span>01</span><strong>Ramyeon</strong><small>Warm • Spicy • Comforting</small></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=1200&q=85" alt="Korean style rice dish">
+            <div class="slide-label"><span>02</span><strong>Kimbap</strong><small>Fresh • Savory • Fun</small></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1635363638580-c2809d049eee?auto=format&fit=crop&w=1200&q=85" alt="Tteokbokki style spicy rice cakes">
+            <div class="slide-label"><span>03</span><strong>Tteokbokki</strong><small>Chewy • Fiery • Addictive</small></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=85" alt="Korean fried food">
+            <div class="slide-label"><span>04</span><strong>Chicken</strong><small>Crispy • Juicy • Saucy</small></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Korean food bowl">
+            <div class="slide-label"><span>05</span><strong>Jjigae</strong><small>Rich • Warm • Hearty</small></div>
+          </article>
+        </div>
+        <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">←</button>
+        <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">→</button>
+        <div class="dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Food highlights">
+      <span>RAMYEON</span><i>✦</i><span>KIMBAP</span><i>✦</i><span>TTEOKBOKKI</span><i>✦</i><span>CHICKEN</span><i>✦</i><span>MANDU</span><i>✦</i><span>RAMYEON</span><i>✦</i><span>KIMBAP</span>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="menuEyebrow">THE MENU</span>
+          <h2 data-i18n="menuTitle">Pick your craving.</h2>
+        </div>
+        <a class="text-link" href="#menu" data-i18n="viewAll">View all →</a>
+      </div>
+
+      <div class="category-tabs" id="categoryTabs">
+        <button class="active" data-category="all" data-i18n="catAll">All</button>
+        <button data-category="noodles" data-i18n="catNoodles">Noodles</button>
+        <button data-category="rice" data-i18n="catRice">Rice & Roll</button>
+        <button data-category="snack" data-i18n="catSnack">Snack</button>
+        <button data-category="chicken" data-i18n="catChicken">Chicken</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="Spicy Rabboki" data-category="noodles">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80" alt="Spicy Rabboki">
+            <span class="tag">BEST SELLER</span>
+            <button class="quick-add" data-product="Spicy Rabboki" data-price="28000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Spicy Rabboki</h3><p>Ramyeon + tteokbokki, spicy & chewy.</p></div><strong>Rp28K</strong></div>
+        </article>
+
+        <article class="product-card" data-name="Original Kimbap" data-category="rice">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80" alt="Original Kimbap">
+            <span class="tag light">FRESH PICK</span>
+            <button class="quick-add" data-product="Original Kimbap" data-price="24000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Original Kimbap</h3><p>Rice roll, nori, veggies & savory filling.</p></div><strong>Rp24K</strong></div>
+        </article>
+
+        <article class="product-card" data-name="Tteokbokki Seoul" data-category="snack">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1635363638580-c2809d049eee?auto=format&fit=crop&w=800&q=80" alt="Tteokbokki Seoul">
+            <span class="tag">HOT</span>
+            <button class="quick-add" data-product="Tteokbokki Seoul" data-price="26000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Tteokbokki Seoul</h3><p>Soft rice cakes in sweet-spicy gochujang sauce.</p></div><strong>Rp26K</strong></div>
+        </article>
+
+        <article class="product-card" data-name="Korean Fried Chicken" data-category="chicken">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Korean fried chicken">
+            <span class="tag light">CRISPY</span>
+            <button class="quick-add" data-product="Korean Fried Chicken" data-price="32000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Korean Fried Chicken</h3><p>Crunchy chicken glazed with Korean sauce.</p></div><strong>Rp32K</strong></div>
+        </article>
+
+        <article class="product-card" data-name="Mandu Gyoza" data-category="snack">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80" alt="Mandu">
+            <span class="tag light">FAVORITE</span>
+            <button class="quick-add" data-product="Mandu Gyoza" data-price="22000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Mandu Gyoza</h3><p>Crispy dumplings with a juicy savory filling.</p></div><strong>Rp22K</strong></div>
+        </article>
+
+        <article class="product-card" data-name="Cheesy Ramyeon" data-category="noodles">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="Cheesy ramyeon">
+            <span class="tag">CHEESY</span>
+            <button class="quick-add" data-product="Cheesy Ramyeon" data-price="27,000">+</button>
+          </div>
+          <div class="product-info"><div><h3>Cheesy Ramyeon</h3><p>Slurpy noodles with a creamy cheese finish.</p></div><strong>Rp27K</strong></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Menu yang kamu cari belum tersedia.</p>
+    </section>
+
+    <section class="promo" id="promo">
+      <div class="promo-content">
+        <span class="eyebrow">LUUNALIENS SPECIAL</span>
+        <h2>Craving more?<br><em>Make it a combo.</em></h2>
+        <p data-i18n="promoText">Mix your favorites dan dapatkan harga bundle yang lebih hemat.</p>
+        <a class="btn btn-dark" href="#menu" data-i18n="promoCta">Lihat Promo</a>
+      </div>
+      <div class="promo-art">
+        <span>🍜</span><span>🥢</span><span>🌶️</span>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85" alt="Korean food table">
+        <div class="about-stamp">맛있게<br><small>MA-SHIS-SEO</small></div>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">ABOUT LUUNALIENS</span>
+        <h2 data-i18n="aboutTitle">A little taste of Korea, made for you.</h2>
+        <p data-i18n="aboutText">luunaliens hadir untuk membawa Korean food yang fun, comforting, dan gampang dipesan. Dari satu bowl ramyeon sampai satu meja penuh kimbap — semuanya dibuat untuk menemani craving kamu.</p>
+        <div class="stats">
+          <div><strong>100%</strong><span>Craving approved</span></div>
+          <div><strong>5+</strong><span>Menu favorites</span></div>
+          <div><strong>1</strong><span>Happy tummy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="howto section" id="howto">
+      <div class="section-head centered">
+        <div><span class="eyebrow" data-i18n="howEyebrow">SO EASY</span><h2 data-i18n="howTitle">Order in 3 steps.</h2></div>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3 data-i18n="step1Title">Choose</h3><p data-i18n="step1Text">Pilih makanan Korea favoritmu.</p></div>
+        <div class="step"><span>02</span><h3 data-i18n="step2Title">Add to cart</h3><p data-i18n="step2Text">Atur jumlah pesanan di keranjang.</p></div>
+        <div class="step"><span>03</span><h3 data-i18n="step3Title">Chat us</h3><p data-i18n="step3Text">Checkout lewat WhatsApp dan tunggu konfirmasi.</p></div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-head">
+        <div><span class="eyebrow">NEED TO KNOW</span><h2 data-i18n="faqTitle">Frequently asked.</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq1">Bagaimana cara pesan?</summary><p data-i18n="faq1a">Pilih menu, tambahkan ke keranjang, lalu klik checkout WhatsApp.</p></details>
+        <details><summary data-i18n="faq2">Apakah bisa custom level pedas?</summary><p data-i18n="faq2a">Bisa! Tulis request level pedas di pesan WhatsApp saat checkout.</p></details>
+        <details><summary data-i18n="faq3">Apakah tersedia delivery?</summary><p data-i18n="faq3a">Tersedia sesuai area layanan. Detail ongkir akan dikonfirmasi via WhatsApp.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">L</span><span>luunaliens</span></a>
+        <p data-i18n="footerText">Korean food for your everyday cravings.</p>
+      </div>
+      <div><h4 data-i18n="footerExplore">Explore</h4><a href="#menu">Menu</a><a href="#promo">Promo</a><a href="#about">About</a></div>
+      <div><h4 data-i18n="footerHelp">Help</h4><a href="#howto">Cara Order</a><a href="#faq">FAQ</a><a href="#home">Contact</a></div>
+      <div><h4>Follow</h4><a href="#" aria-label="Instagram">Instagram ↗</a><a href="#" aria-label="TikTok">TikTok ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 luunaliens. All rights reserved.</span><span>Korean food, Indonesian heart ♡</span></div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10 10 0 0 0 4.1 15.4L3 21l5.8-1.5A10 10 0 1 0 20.5 3.5ZM12 19a7 7 0 0 1-3.6-1l-.4-.2-3.4.9.9-3.3-.2-.4A7 7 0 1 1 12 19Zm3.9-5.2c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7 1-.1.1-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.5.8-1.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3-.7.7-.9 1.6-.9 2.5 0 .2.1.5.1.7.2.8.7 1.6 1.2 2.2 1.6 1.9 4 2.6 5.6 2.9.2 0 .4 0 .6-.1.7-.2 1.3-.6 1.7-1.1.1-.2.2-.4.1-.6-.1-.1-.3-.2-.5-.3Z"/></svg>
+    <span class="wa-tooltip" data-i18n="waTooltip">Chat via WhatsApp</span>
+  </a>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-head"><div><span class="eyebrow">YOUR CART</span><h2 data-i18n="cartTitle">Your cravings.</h2></div><button id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><div>🛒</div><p data-i18n="cartEmpty">Keranjangmu masih kosong.</p><a href="#menu" id="cartBrowse" data-i18n="cartBrowse">Browse menu →</a></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="total-row"><span data-i18n="total">Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-primary full" id="checkoutButton" data-i18n="checkout">Checkout via WhatsApp</button>
+      <small data-i18n="checkoutNote">Pesanan akan dikirim ke WhatsApp untuk konfirmasi.</small>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
