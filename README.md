@@ -34,6 +34,7 @@ luunaliens/
 ├── index.html
 ├── style.css
 ├── script.js
+├── favicon.svg
 └── README.md
 ```
 

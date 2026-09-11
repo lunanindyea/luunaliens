@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B7352B"/><stop offset="1" stop-color="#8E241E"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <circle cx="64" cy="65" r="34" fill="#FBF7F1" opacity=".98"/>
+  <ellipse cx="64" cy="66" rx="30" ry="12" fill="#D9B66F"/>
+  <ellipse cx="64" cy="62" rx="23" ry="10" fill="#271D18"/>
+  <circle cx="55" cy="62" r="3.5" fill="#FBF7F1"/>
+  <circle cx="73" cy="62" r="3.5" fill="#FBF7F1"/>
+  <path d="M58 70 Q64 76 70 70" fill="none" stroke="#FBF7F1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 58 Q39 42 52 37" fill="none" stroke="#FBF7F1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M94 58 Q89 42 76 37" fill="none" stroke="#FBF7F1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M64 32 L64 24" stroke="#FBF7F1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M57 25 Q64 15 71 25 L68 31 H60Z" fill="#FBF7F1"/>
+  <path d="M22 37 l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#D9B66F"/>
+  <path d="M104 29 l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#D9B66F"/>
+  <path d="M28 82 Q64 103 100 82" fill="none" stroke="#FBF7F1" stroke-width="5" stroke-linecap="round"/>
+</svg>
