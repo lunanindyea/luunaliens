@@ -1,87 +1,67 @@
-# 🍜 luunaliens — Korean Food Landing Page
+# 🍜 luunaliens — Korean Food Landing Page + Google Sheets Database
 
-Landing page modern dan minimalis untuk **luunaliens**, brand Korean food.
+Landing page modern + **database gratis** menggunakan Google Sheets & Apps Script.
 
-## ✨ Features
+## ✨ Fitur
 
-- Responsive desktop, tablet, dan mobile
+### Frontend (tetap sama & lebih baik)
+- Responsive desktop, tablet, mobile
 - Hero slider 5 makanan Korea
-- Menu makanan Korea
-- Filter kategori
-- Search menu
-- Shopping cart + quantity control
-- Checkout langsung ke WhatsApp
+- Menu dinamis dari Google Sheets
+- Filter kategori + search
+- Shopping cart + quantity (localStorage)
+- Checkout ke WhatsApp **+ simpan order ke Sheets**
 - Floating WhatsApp button
 - Bahasa Indonesia / English
-- Promo, About, Cara Order, dan FAQ
-- Smooth scrolling dan hover animation
-- Cart tersimpan dengan `localStorage`
+- Promo, About, Cara Order, FAQ
+- Stok real-time (produk sold out otomatis nonaktif)
 
-## 🎨 Brand Colors
+### Backend (baru – gratis)
+- Produk, harga, stok, tag dikelola di Google Sheets
+- Setiap checkout otomatis tercatat di sheet **Orders**
+- Stok berkurang otomatis saat order masuk
+- Nomor WA & template pesan bisa diubah dari sheet **Settings**
+- Tidak perlu server bayar, tidak perlu Firebase, tidak perlu Vercel function
 
-- Red: `#A52A22`
-- Dark Red: `#7D1F19`
-- Light Brown: `#D8B99C`
-- Soft Brown: `#F3E9DF`
-- Light Gold: `#D9B66F`
-- Cream: `#FBF7F1`
-- Dark Brown: `#271D18`
+## 🚀 Cara Deploy
 
-## 📁 Struktur File
+**Baca file `SETUP.md`** — di dalamnya ada panduan lengkap step-by-step:
 
-```text
-luunaliens/
+1. Buat Google Spreadsheet (Products + Orders + Settings)
+2. Paste kode Apps Script & deploy Web App
+3. Ganti `API_URL` di `script.js`
+4. Push ke GitHub Pages
+
+## 📁 Struktur
+
+```
 ├── index.html
+├── script.js          ← ganti API_URL di sini
 ├── style.css
-├── script.js
 ├── favicon.svg
+├── CNAME
+├── hotlink/
+├── apps-script/
+│   └── Code.gs        ← paste ke Google Apps Script
+├── sample-products.csv
+├── SETUP.md           ← PANDUAN LENGKAP
 └── README.md
 ```
 
-## 🚀 Cara Menjalankan
+## 🛠️ Update Menu Sehari-hari
 
-1. Extract ZIP.
-2. Buka folder project.
-3. Buka `index.html` di browser.
+Cukup buka Google Spreadsheet → sheet **Products**:
+- Tambah baris baru = menu baru muncul di website
+- Ubah harga / stok / tag = langsung terupdate
+- Set `active = FALSE` = menu hilang dari website
 
-Untuk development, bisa menggunakan VS Code + Live Server.
-
-## 💬 WhatsApp
-
-Nomor WhatsApp: `+62 858-1456-8534`
-
-Template floating WhatsApp:
-
-```text
-Halo kak aku mau pesan rabboki .... 5 pack ya
-```
-
-Checkout dari cart otomatis membuat pesan berisi produk, jumlah, dan total harga.
-
-## 🖼️ Image Credits
-
-Gambar makanan sementara menggunakan URL gambar dari **Unsplash**. Untuk versi production, sebaiknya ganti dengan foto produk asli luunaliens atau foto stock yang lisensinya sesuai.
-
-## 🛠️ Pengembangan Selanjutnya
-
-- Login / register
-- Database produk
-- Admin dashboard
-- Manajemen stok
-- Alamat dan ongkir
-- Payment gateway
-- Status pesanan
-- Voucher / promo
-- Wishlist
-- Rating & review
-- Instagram feed
-- Google Maps
-- Backend Node.js / Laravel / Firebase
-- Database MySQL / PostgreSQL / Firebase
+Tidak perlu edit kode atau push GitHub lagi.
 
 ## 📌 Catatan
 
-Project ini merupakan **frontend landing page prototype**. Data produk dan harga masih ditulis di `index.html` dan `script.js`. Untuk transaksi production, disarankan menambahkan backend dan database.
+- Website tetap pure static (GitHub Pages).
+- Semua data produk & order ada di Google Sheets milikmu.
+- Mode offline / fallback: kalau API belum di-set, website tetap jalan dengan 6 menu default.
 
 ---
 

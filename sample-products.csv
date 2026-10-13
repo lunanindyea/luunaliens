@@ -1,0 +1,7 @@
+id,name,price,category,description,image,tag,stock,active,sort_order
+1,Spicy Rabboki,28000,noodles,"Ramyeon + tteokbokki, spicy & chewy.",https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80,BEST SELLER,50,TRUE,1
+2,Original Kimbap,24000,rice,"Rice roll, nori, veggies & savory filling.",https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80,FRESH PICK,40,TRUE,2
+3,Tteokbokki Seoul,26000,snack,Soft rice cakes in sweet-spicy gochujang sauce.,https://images.unsplash.com/photo-1635363638580-c2809d049eee?auto=format&fit=crop&w=800&q=80,HOT,35,TRUE,3
+4,Korean Fried Chicken,32000,chicken,Crunchy chicken glazed with Korean sauce.,https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80,CRISPY,30,TRUE,4
+5,Mandu Gyoza,22000,snack,Crispy dumplings with a juicy savory filling.,https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80,FAVORITE,45,TRUE,5
+6,Cheesy Ramyeon,27000,noodles,Slurpy noodles with a creamy cheese finish.,https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80,CHEESY,40,TRUE,6
