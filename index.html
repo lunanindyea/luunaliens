@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link rel="stylesheet" href="https://silverhawk.web.id/lock/lock.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>luunaliens — Korean Food, Made for Your Cravings</title>
-  <meta name="description" content="luunaliens — Nikmati comfort food Korea favoritmu. Ramyeon, kimbap, tteokbokki, chicken & more. Order via WhatsApp.">
+  <meta name="description" content="luunaliens — Nikmati comfort food Korea favoritmu. Ramyeon, kimbap, tteokbokki, chicken & more. Order via WhatsApp. Delivery area tertentu.">
+  <meta name="keywords" content="korean food, makanan korea, ramyeon, kimbap, tteokbokki, korean fried chicken, order whatsapp, delivery makanan korea, luunaliens">
+  <meta name="author" content="luunaliens">
   <meta name="theme-color" content="#A52A22">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
   <link rel="canonical" href="https://luunaliens.my.id/">
 
-  <!-- Open Graph / Facebook / WhatsApp -->
+  <!-- Open Graph / Facebook / WhatsApp / Telegram -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://luunaliens.my.id/">
   <meta property="og:title" content="luunaliens — Korean Food, Made for Your Cravings">
@@ -20,9 +22,10 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="luunaliens — Korean Food">
+  <meta property="og:image:alt" content="luunaliens — Korean Food for Your Cravings">
   <meta property="og:site_name" content="luunaliens">
   <meta property="og:locale" content="id_ID">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -32,12 +35,72 @@
   <meta name="twitter:image" content="https://luunaliens.my.id/og-image.jpg">
   <meta name="twitter:image:alt" content="luunaliens — Korean Food">
 
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="favicon.svg">
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#A52A22">
+
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "luunaliens",
+    "alternateName": "Luunaliens Korean Food",
+    "url": "https://luunaliens.my.id/",
+    "logo": "https://luunaliens.my.id/favicon.svg",
+    "image": "https://luunaliens.my.id/og-image.jpg",
+    "description": "Nikmati comfort food Korea favoritmu — ramyeon, kimbap, tteokbokki, chicken & more. Order mudah via WhatsApp.",
+    "servesCuisine": ["Korean", "Asian"],
+    "priceRange": "$$",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    },
+    "sameAs": [],
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luunaliens.my.id/#menu",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "deliveryMethod": [
+        "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+        "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "luunaliens",
+    "url": "https://luunaliens.my.id/",
+    "description": "Korean food landing page — order via WhatsApp",
+    "inLanguage": ["id", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://luunaliens.my.id/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <style>
     /* Loading & dynamic product helpers */
     .product-grid.loading { min-height: 280px; display:flex; align-items:center; justify-content:center; }
@@ -60,8 +123,7 @@
     }
   </style>
 </head>
-<body>
-  <body data-shlock-mode="ultimate" data-shlock-domain="" data-shlock-brand="Luunaliens" data-shlock-social="https://dai.ly/xauczam">
+<body data-shlock-mode="ultimate" data-shlock-domain="" data-shlock-brand="Luunaliens" data-shlock-social="https://dai.ly/xauczam">
   <div class="topbar">
     <span data-i18n="topbar">FREE DELIVERY untuk area tertentu • Order via WhatsApp</span>
   </div>

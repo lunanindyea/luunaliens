@@ -1,0 +1,9 @@
+# robots.txt for https://luunaliens.my.id/
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://luunaliens.my.id/sitemap.xml
+
+# Crawl-delay (optional, most bots ignore)
+Crawl-delay: 1
